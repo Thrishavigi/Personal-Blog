@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Comment Section</title>
+    <style>
+      /* CSS for comment container */
+      .body{
+        background-color: rgb(190, 14, 14);
+      }
+      .comment-container {
+        width: 80%;
+        margin: 0 auto;
+      }
+      
+      /* CSS for individual comments */
+      .comment {
+        background-color: #fcf9f9;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      
+      /* CSS for comment author and date */
+      .comment-author {
+        font-weight: bold;
+        color: #666;
+        margin-bottom: 5px;
+      }
+      
+      .comment-date {
+        font-style: italic;
+        color: #999;
+      }
+      
+      /* CSS for comment form */
+      .comment-form {
+        
+        width: 80%;
+        margin: 0 auto;
+      }
+      
+      /* CSS for comment form fields */
+      .comment-form input[type="text"],
+      .comment-form textarea {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+      
+      /* CSS for comment form submit button */
+      .comment-form input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+      
+      /* CSS for comment form submit button on hover */
+      .comment-form input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="comment-container">
+      <div class="comment">
+        <div class="comment-author">John Doe</div>
+        <div class="comment-date">April 24, 2023</div>
+        <div class="comment-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id diam ac felis tempus rutrum. Integer bibendum turpis a massa hendrerit ullamcorper. Nam fermentum mauris non lectus fringilla, eget vehicula nisi vehicula.
+        </div>
+      </div>
+      <div class="comment">
+        <div class="comment-author">Jane Smith</div>
+        <div class="comment-date">April 25, 2023</div>
+        <div class="comment-content">
+          Duis ullamcorper nunc eu nibh volutpat, a pharetra nisl rhoncus. Nullam tristique convallis magna eu molestie. Sed ut leo sit amet elit congue vestibulum eget eu lorem. Aenean rhoncus sapien a bibendum dignissim.
+        </div>
+      </div>
+    </div>
+    
+    <div class="comment-form">
+      <h2>Leave a Comment</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+        
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" required></textarea>
+        
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>
+
+

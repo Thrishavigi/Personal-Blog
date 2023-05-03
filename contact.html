@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Information</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #0c0c0c;
+		}
+		h1 {
+			color: #faf8f8;
+			text-align: center;
+			margin-top: 50px;
+		}
+		.container {
+			margin: 50px auto;
+			padding: 20px;
+			width: 80%;
+			background-color: #f9004d;
+			box-shadow: 0 0 10px rgba(0,0,0,0.3);
+			border-radius: 10px;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 20px;
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+		input[type="text"],
+		input[type="email"],
+		textarea {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 0 5px rgba(0,0,0,0.3);
+		}
+		input[type="submit"] {
+			background-color: #1c1c1c;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		input[type="submit"]:hover {
+			background-color: #333;
+		}
+	</style>
+</head>
+<body>
+	<h1>Contact Information</h1>
+	<div class="container">
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" rows="5" required></textarea>
+
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Subscribe to Our Newsletter</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #070707;
+		}
+		h1 {
+			color: #fffefe;
+			text-align: center;
+			margin-top: 50px;
+		}
+		.container {
+			margin: 50px auto;
+			padding: 20px;
+			width: 80%;
+			background-color: #f9004d;
+			box-shadow: 0 0 10px rgba(0,0,0,0.3);
+			border-radius: 10px;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 20px;
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+		input[type="email"] {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 0 5px rgba(0,0,0,0.3);
+		}
+		input[type="submit"] {
+			background-color: #1c1c1c;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		input[type="submit"]:hover {
+			background-color: #333;
+		}
+	</style>
+</head>
+<body>
+	<h1>Subscribe to My Blog</h1>
+	<div class="container">
+		<form>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+			<input type="submit" value="Subscribe">
+		</form>
+	</div>
+</body>
+</html>
